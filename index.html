@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<script src="https://cdn.tailwindcss.com">
+	</script>
+	<script src="https://kit.fontawesome.com/1100c19553.js">
+	</script>
+	<title></title>
+</head>
+<body>
+	<section class="flex flex-col justify-center items-center">
+		<h1 class="text-center text-4xl mb-10 mt-8" style="color:crimson;">Money Saved<i class="fa-sharp fa-solid fa-sack-dollar ml-4" style="color: #0d9488;"></i></h1>
+		<div class="flex justify-center items-center gap-12 bg-yellow-400">
+			<div>
+				<h1 class="text-center mb-4 text-2xl">Income</h1><label class="mb-4" for=""><span class="font-extrabold ml-2">Incom:</span><input class="bg-emerald-400 w-56 h-8 text-white ml-6" id="inocome-input" type="text"></label>
+				<h1 class="text-center mb-4 text-2xl">Expenses</h1><label for=""><span class="font-extrabold ml-2">Food:</span> <input class="bg-emerald-400 w-56 h-8 text-white mb-4 ml-6" id="food-cost" type="text"></label><br>
+				<label class="mt-4" for=""><span class="font-extrabold ml-2">Rent:</span> <input class="bg-emerald-400 w-56 h-8 text-white mb-4 ml-7" id="rent-cost" type="text"></label><br>
+				<label for=""><span class="font-extrabold ml-2">Clothes:</span> <input class="bg-emerald-400 w-56 h-8 text-white mb-4 ml-2" id="cothes-cost" type="text"></label><br>
+				<button class="w-36 h-8 rounded text-white bg-emerald-400 mt-4 ml-9 mb-4" id="calculate">Calculate</button> <button class="rounded text-white bg-emerald-400 h-8 w-24" onclick="deletAllData()">Delet Me</button>
+			</div>
+			<div>
+				<h1 class="text-3xl mb-4">Total Expenses:<span id="total-Expenses">0000</span></h1>
+				<h1 class="text-3xl mb-4">Balance: <span id="cost-end-blance">0000</span></h1>
+				<div class="flex mb-8">
+					<h1 class="text-2xl">save:</h1><input class="w-24 h-8 bg-emerald-400 ml-4" id="save-input" type="text">
+					<h1 class="text-2xl ml-4">%</h1><button class="w-24 h-8 bg-emerald-400 ml-4 mr-2" id="save-button">Save</button>
+				</div>
+				<h1 class="text-2xl mb-4">Saving Amount:<span id="saving-blance">0000</span></h1>
+				<h1 class="text-2xl">Remaining Balance:<span id="remaining-blance">0000</span></h1>
+			</div>
+		</div>
+	</section>
+	<script src="script.js">
+	</script>
+</body>
+</html>
